@@ -1,9 +1,9 @@
 import Document, {
-  DocumentContext,
   Html,
   Head,
   Main,
-  NextScript
+  NextScript,
+  DocumentContext
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -33,10 +33,19 @@ export default class MyDocument extends Document {
       sheet.seal()
     }
   }
+
   render() {
     return (
-      <Html lang="pt-Br">
-        <Head />
+      <Html lang="pt-BR">
+        <Head>
+          {/* <link
+            rel="preload"
+            href="/fonts/poppins-v12-latin-300.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          /> */}
+        </Head>
         <body>
           <Main />
           <NextScript />

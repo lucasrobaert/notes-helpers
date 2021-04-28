@@ -12,7 +12,7 @@ module.exports = function (plop) {
       {
         type: 'add',
         path: '../_notes/{{lowerCase title}}.md',
-        templateFile: 'templates/faq.md.hbs'
+        templateFile: 'templates/note.md.hbs'
       }
     ]
   })
