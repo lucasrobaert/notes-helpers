@@ -13,7 +13,7 @@
     "note": "yarn plop --plopfile note_generator/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
-    "cache-faqs": "node scripts/cache.js"
+    "cache-notes": "node scripts/cache.js"
   },
   "husky": {
     "hooks": {
