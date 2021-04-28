@@ -94,7 +94,7 @@ export const Content = styled.div`
     }
 
     pre {
-      background-color: ${theme.colors.black};
+      background-color: ${theme.colors.lightGray};
       border-radius: ${theme.border.radius};
       padding: ${theme.spacings.small};
       margin: ${theme.spacings.xxsmall} 0;
@@ -106,7 +106,7 @@ export const Content = styled.div`
         font-size: ${theme.font.sizes.medium};
         font-weight: ${theme.font.light};
         font-family: monospace;
-        color: ${theme.colors.white};
+        color: ${theme.colors.darkGray};
         background-color: transparent;
       }
     }

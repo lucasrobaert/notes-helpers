@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import {
   Search as IconSearch,
   QuestionAnswer
@@ -21,29 +20,15 @@ const Main = ({ notes = [] }: MainProps) => {
   return (
     <S.Wrapper>
       <S.LogoWrapper>
-        <S.Logo
-          src="/img/logo.svg"
-          alt="Imagem de um átomo e React Avançado escrito ao lado."
-        />
-        <S.Faq>FAQ</S.Faq>
+        <S.Title>Notes and Helpers</S.Title>
       </S.LogoWrapper>
       <S.Hero>
         <S.Description>
           <Heading>
-            <MediaMatch greaterThan="large">
-              <QuestionAnswer size={60} />
-            </MediaMatch>
-            Dúvidas e erros frequentes do curso de {` `}
-            <Link href="https://reactavancado.com.br/">
-              <a>React Avançado</a>
-            </Link>
-            {` `} e coisas relacionadas também.
+            Dúvidas e erros frequentes pelos quais já passei na vida, ou
+            curiosidades
           </Heading>
         </S.Description>
-        <S.Illustration
-          src="/img/faq.svg"
-          alt="Duas pessoas com um ponto interrogação."
-        />
       </S.Hero>
       <S.InputWrapper>
         <Search

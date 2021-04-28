@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 import { Container } from 'components/Container'
-import { getAllNotesData, getAllNotesIds, getNoteData } from 'lib/note'
+import { getAllNotesIds, getNoteData } from 'lib/note'
 
 import { ArrowBack, ContentCopy, Done } from '@styled-icons/material-outlined'
 import * as S from 'styles/note-styles'

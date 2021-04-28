@@ -66,7 +66,7 @@ export const Logo = styled.img`
   margin-right: 1rem;
 `
 
-export const Faq = styled.div`
+export const Title = styled.div`
   ${({ theme }) => css`
     background-image: linear-gradient(45deg, #8a2387, #f23131);
     font-family: '${theme.font.family}';
@@ -76,7 +76,6 @@ export const Faq = styled.div`
     -webkit-background-clip: text;
     color: transparent;
     padding-right: ${theme.spacings.xxsmall};
-    letter-spacing: -5px;
   `}
 `
 
@@ -85,8 +84,6 @@ export const Hero = styled.div`
     margin: ${theme.spacings.small} 0;
     ${media.greaterThan('medium')`
       width: 70%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       justify-items: center;
       align-items: center;
     `};
