@@ -65,7 +65,7 @@ export const CopyWrapper = styled.div`
 export const Title = styled.h1`
   ${({ theme }) => css`
     width: 100%;
-    color: ${theme.colors.black};
+    color: ${theme.colors.darkGray};
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.bold};
     margin-top: ${theme.spacings.xxsmall};
@@ -83,6 +83,7 @@ export const Content = styled.div`
     h3 {
       font-size: ${theme.font.sizes.xlarge};
       margin: ${theme.spacings.xsmall} 0;
+      color: ${theme.colors.darkGray};
     }
     code {
       font-size: ${theme.font.sizes.xlarge};
@@ -133,5 +134,18 @@ export const Content = styled.div`
         font-weight: ${theme.font.bold};
       }
     }
+  `}
+`
+
+export const TitleLogo = styled.div`
+  ${({ theme }) => css`
+    background-image: linear-gradient(45deg, #8a2387, #f23131);
+    font-family: '${theme.font.family}';
+    font-size: ${theme.font.sizes.huge};
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-right: ${theme.spacings.xxsmall};
   `}
 `

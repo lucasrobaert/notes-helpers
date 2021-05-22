@@ -38,12 +38,7 @@ const Note = ({ postData }: PostDataProps) => {
   return (
     <S.Wrapper>
       <Link href="/">
-        <a>
-          <S.Logo
-            src="/img/logo.svg"
-            alt="Imagem de um átomo e React Avançado escrito ao lado."
-          />
-        </a>
+        <S.TitleLogo>Notes and Helpers</S.TitleLogo>
       </Link>
       <Head>
         <title>{postData.title}</title>
